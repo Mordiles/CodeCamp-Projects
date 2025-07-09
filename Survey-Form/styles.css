@@ -83,7 +83,7 @@ body{
 
 .form-group #name,
 .form-group #email,
-.form-group #age,
+.form-group #number,
 .form-group #fav-feature,
 .form-group #suggestions {
     width: 95%;
