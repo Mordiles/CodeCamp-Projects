@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+        <nav id="navbar">
+      <header><h1>Python Language Documentation</h1></header>
+        <ul>
+            <li><a href="#What_is_Python?" class="nav-link">What is Python?</a></li>
+            <li><a href="#Variables_and_Data_Types" class="nav-link" >Variables and Data Types</a></li>
+            <li><a href="#Conditional_Statements"class="nav-link">Conditional Statements</a></li>
+            <li><a href="#Loops" class="nav-link" >Loops</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Python?">
+        <header>
+          <h2>What is Python?</h2>
+          </header>
+          <article>
+
+        <p>
+            Python is a high-level, interpreted programming language known for its simple and readable syntax.
+             It is widely used in web development, data science, automation, artificial intelligence, and more.
+        </p>
+
+        <code>
+          <p class="code"><span class="print">print</span>(<span class="string">"Hello, World!"</span>)</p>
+        </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>
+          <h2>Variables and Data Types</h2>
+          </header>
+          <article>
+
+        <p>Variables in Python do not need explicit declaration to reserve memory space.</p>
+
+      <code>
+        <p>name = <span class="string">"Alice"</span> &ensp;&emsp;&nbsp;&emsp; <span class="comments"># String</span></p>
+        <p>age = <span class="int">25</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class="comments"># Integer</span></p>
+        <p>height = <span class="int">5.5</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class="comments"># Float</span></p>
+        <p>is_student = <span class="bool">True</span> &ensp; <span class="comments"># Boolean</span></p>
+      </code>
+
+      <p>Common data types:</p>
+      <ul>
+        <li>str (String)</li>
+        <li>int (Integer)</li>
+        <li>float (Floating point)</li>
+        <li>bool (Boolean)</li>
+        <li>list, dict, tuple, set (Collections)</li>
+      </ul>
+      </article>
+      </section>
+
+      <section class="main-section" id="Conditional_Statements">
+
+        <header>
+          <h2>Conditional Statements</h2>
+          </header>
+          <article>
+
+        <p>Python uses if, elif, and else for decision-making.</p>
+
+        <code>
+          <p>age = <span class="int">18</span></p>
+          <p><span class="bool">if</span> age >= <span class="int">18</span>:</p>
+          <p>&ensp; <span class="print">print</span>(<span class="string">"You are an adult."</span>)</p>
+          <p><span class="bool">else</span>:</p>
+          <p>&ensp; <span class="print">print</span>(<span class="string">"You are a minor.</span>")</p>
+        </code>
+
+        <p>Indentation is crucial in Python and replaces curly braces used in other languages</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header>
+          <h2>Loops</h2>
+          </header>
+          <article>
+            <p>Python has for and while loops for repeating tasks.</p>
+            <code>
+              <span class="comments"># For loop</span><br>
+              <span class="bool">for</span> i <span class="bool">in</span> <span class="print">range</span>(<span class="int">5</span>):<br>
+              &emsp; <span class="print">print</span>(i)<br>
+              <br>
+              <span class="comments"># While loop</span><br>
+              count = <span class="int">0</span><br>
+              <span class="bool">while</span> count < <span class="int">5</span>:<br>
+              &emsp; <span class="print">print</span>(count)<br>
+              &emsp; count += <span class="int">1</span><br>
+            </code>
+          </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>
+          <h2>Functions</h2>
+          </header>
+          <article>
+            <p>Functions allow you to group code into reusable blocks.</p>
+            <code>
+              <span class="bool">def</span> <span class="greet">greet</span>(name):<br>
+              &emsp; <span class="bool">return</span> <span class="string">f"Hello, {name}</span>!"<br>
+              <br>
+              <span class="print">print</span>(greet(<span class="string">"Alice"</span>))
+            </code>
+            <p>Functions are defined using the def keyword, followed by the function name and parentheses.</p>
+          </article>
+      </section>
+    </main>
+  </body>
+</html>
