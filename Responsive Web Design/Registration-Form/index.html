@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>XYZ Account Registration Form</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="registration-container">
+        <header class="registration-header">
+            <h1>Create an XYZ account</h1>
+            <p>Please fill in the form below to create your account.</p>
+        </header>
+        <form class="registration-form">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="first-name">Enter Your First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                <label for="last-name">Enter Your Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                <label for="age">Input Your Age (Years):</label>
+                <input type="number" name="age" id="age" min="15" max="100" placeholder="Enter your age" required>
+                <label for="username">Enter Your Username (Public):</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="email">Enter Your Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <label for="password">Create Your Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create your password" required>
+                <label for="country">Select Your Country:</label>
+                <select name="country" id="country" required>
+                    <option value="">--Please Select Your Country--</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Account Type: (Required)</legend>
+                <label for="personal"><input type="radio" id="personal" name="account-type" value="personal"
+                        required>Personal</label>
+                <label for="business"><input type="radio" id="business" name="account-type" value="business"
+                        required>Business</label>
+                <label for="enterprise"><input type="radio" id="enterprise" name="account-type" value="enterprise"
+                        required>Enterprise</label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Upload Your Profile Picture:</label>
+                <input type="file" name="profile-picture" id="profile-picture">
+                <p class="accepted-formats">Accepted formats: JPG, PNG, GIF (Max size: 2MB)</p>
+                <label for="referral-source">How did you hear about us?</label>
+                <select name="referral-source" id="referral-source" required>
+                    <option value="">--Please Select--</option>
+                    <option value="friend">Friend</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="search-engine">Search Engine</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="bio">Provide a brief bio:</label>
+                <textarea name="bio" id="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+                <label for="terms"><input type="checkbox" id="terms" name="terms" required> I agree to the <a href="terms-and-conditions.html" target="_blank">terms and conditions</a></label>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+
+</html>
